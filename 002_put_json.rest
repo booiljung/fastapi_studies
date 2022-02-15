@@ -1,0 +1,16 @@
+@scheme = http
+@hostname = 127.0.0.1
+@port = 8000
+@baseUrl = {{scheme}}://{{hostname}}:{{port}}
+
+### @name putItem
+
+@item_id=113
+PUT {{baseUrl}}/items/{{item_id}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "myname",
+    "price": 12.50,
+    "is_offer": true
+}

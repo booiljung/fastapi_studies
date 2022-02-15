@@ -1,0 +1,16 @@
+@scheme = http
+@hostname = 127.0.0.1
+@port = 8000
+@baseUrl = {{scheme}}://{{hostname}}:{{port}}
+
+### @name getRoot
+
+GET {{baseUrl}}/ HTTP/1.1
+Content-Type: application/json
+
+### @name getItem
+
+@item_id=112
+@q=myquery
+GET {{baseUrl}}/items/{{item_id}}?q={{q}} HTTP/1.1
+Content-Type: application/json
