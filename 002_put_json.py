@@ -1,3 +1,5 @@
+# pip3 install fastapi uvicorn[standard]
+
 from typing import Optional
 from fastapi import FastAPI
 from pydantic import BaseModel

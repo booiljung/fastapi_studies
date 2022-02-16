@@ -1,3 +1,5 @@
+# pip3 install fastapi uvicorn[standard] pydantic
+
 from typing import Optional
 from fastapi import Depends, FastAPI
 from fastapi.security import OAuth2PasswordBearer
